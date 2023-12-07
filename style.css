@@ -17,7 +17,7 @@ body {
 
 #leaf {
     width: 30vw;
-    height: 100vh;
+    height: 100%;
 
 }
 .banner{
@@ -26,7 +26,7 @@ body {
     background-color: black;
     width: 30vw;
     height: 150px;
-    top: 12rem;
+    top: 11rem;
     opacity: 0.6;
     color: white;
     align-items: center;
@@ -51,13 +51,28 @@ body {
     width: 70vw;
     height: 100vh;
 }
-
+section {
+    height: 35vh;
+}
 fieldset {
     background-color: white;
     filter: drop-shadow(0px 5px 5px black);
+    border: 0px;
+    height: 30vh;
 }
-
+label,input {
+    display: block;
+}
+.input-pairs {
+    display: flex;
+}
 button {
     background-color: #596D48;
     color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    width: 250px;
+    height: 50px;
+    border: 0px;
+    border-radius: 10px;
 }
