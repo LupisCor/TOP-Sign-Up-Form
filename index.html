@@ -3,46 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TOP Sign Up Page</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <img src="./halie-west-25xggax4bSA-unsplash.jpg">
-    <div class="content">
-        <p>This is not a real online service. This is a project page meant to test the creators web development progress with forms. 
-            No information is actually saved, sumbitted, or interacted with in any way. The purpose of this page is simply to test out HTML form functionality.</p>
-        <p>Thank you for your understanding.</p>
-        <form>
-            <fieldset>
-                <legend>Let's do this!</legend>
-    
-                <div>
-                    <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name" name="first-name">
-    
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name" name="last-name">
-                </div>
-                <div>
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email">
-    
-                    <label for="phone-number">Phone Number:</label>
-                    <input type="tel" id="phone-number" name="phone-number">
-                </div>
-                <div>
-                    <label for="psswrd">Password:</label>
-                    <input type="password" id="psswrd" name="psswrd">
-    
-                    <label for="psswrd-conf">Confirm Password:</label>
-                    <input type="text" id="psswrd-conf" name="psswrd-conf">
-                </div>
-            </fieldset>
-    
-            <button type="submit">Create Account</button>
-            <p>Already have an account? Log in</p>
-        </form>
+    <div class="page">
+        <div class="image">
+            <img id="leaf" src="./halie-west-25xggax4bSA-unsplash.jpg">
+            <div class="banner">
+                <img id="logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png">
+                <p>Odin</p>
+            </div>
+            <p id="image-credit">Photo by Halie West on Unsplash</p>
+        </div>
+        <div class="content">
+            <section id="intro">
+                <p>This is not a real online service. This is a project page meant to test the creators web development progress with forms. 
+                    No information is actually saved, sumbitted, or interacted with in any way. The purpose of this page is simply to test out HTML form functionality.</p>
+                <p>Thank you for your understanding.</p>
+            </section>
+            <form>
+                <fieldset>
+                    <p>Lets do this!</p>
+        
+                    <div>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name">
+        
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email">
+        
+                        <label for="phone-number">Phone Number:</label>
+                        <input type="tel" id="phone-number" name="phone-number">
+                    </div>
+                    <div>
+                        <label for="psswrd">Password:</label>
+                        <input type="password" id="psswrd" name="psswrd">
+        
+                        <label for="psswrd-conf">Confirm Password:</label>
+                        <input type="text" id="psswrd-conf" name="psswrd-conf">
+                    </div>
+                </fieldset>
+
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <span style="color: #596D48">Log in</span></p>
+            </form>
+        </div>
     </div>
 </body>
 </html>
