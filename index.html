@@ -19,9 +19,9 @@
         </div>
         <div class="content">
             <section id="intro">
-                <p>This is not a real online service. This is a project page meant to test the creators web development progress with forms. 
+                <p class="intro-text">This is not a real online service. This is a project page meant to test the creators web development progress with forms. 
                     No information is actually saved, sumbitted, or interacted with in any way. The purpose of this page is simply to test out HTML form functionality.</p>
-                <p>Thank you for your understanding.</p>
+                <p class="intro-text">Thank you for your understanding.</p>
             </section>
             <form>
                 <fieldset>
@@ -30,40 +30,42 @@
                     <div class="input-pairs">
                         <div class="label-input">
                             <label for="first-name">First Name:</label>
-                            <input type="text" id="first-name" name="first-name">
+                            <input type="text" id="first-name" name="first-name" placeholder="John">
                         </div>
         
                         <div class="label-input">
                             <label for="last-name">Last Name:</label>
-                            <input type="text" id="last-name" name="last-name">
+                            <input type="text" id="last-name" name="last-name" placeholder="Doe">
                         </div>
                     </div>
                     <div class="input-pairs">
                         <div class="label-input">
                             <label for="email">Email Address:</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" placeholder="johndoe@email.com">
                         </div>
         
                         <div class="label-input">
                             <label for="phone-number">Phone Number:</label>
-                            <input type="tel" id="phone-number" name="phone-number">
+                            <input type="tel" id="phone-number" name="phone-number" pattern="(\d{3}[\-]?\d{3}[\-]?\d{4})" placeholder="XXX-XXX-XXXX">
                         </div>
                     </div>
                     <div class="input-pairs">
                         <div class="label-input">
                             <label for="psswrd">Password:</label>
-                            <input type="password" id="psswrd" name="psswrd">
+                            <input type="password" id="psswrd" name="psswrd" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9]).{8,}" 
+                                title="Must contain 8 or more characters including atleast one number, one lowercase letter, one uppercase letter, and one special character">
                         </div>
         
                         <div class="label-input">
                             <label for="psswrd-conf">Confirm Password:</label>
-                            <input type="text" id="psswrd-conf" name="psswrd-conf">
+                            <input type="password" id="psswrd-conf" name="psswrd-conf" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9]).{8,}" 
+                            title="Must contain 8 or more characters including atleast one number, one lowercase letter, one uppercase letter, and one special character">
                         </div>
                     </div>
                 </fieldset>
 
                 <button type="submit">Create Account</button>
-                <p>Already have an account? <span style="color: #596D48">Log in</span></p>
+                <p id="login-text">Already have an account? <a href=#><span style="color: #596D48">Log in</span></a></p>
             </form>
         </div>
     </div>

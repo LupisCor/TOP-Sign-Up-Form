@@ -44,35 +44,112 @@ body {
     position: absolute;
     bottom: 0.5rem;
     color: white;
-    
 }
 
 .content {
     width: 70vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-section {
+form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+#intro {
     height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+.intro-text {
+    flex: 1;
+    position: relative;
+    top: 4rem;
+    width: 700px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 18px;
+    padding-left: 2rem;
+}
+
 fieldset {
     background-color: white;
     filter: drop-shadow(0px 5px 5px black);
     border: 0px;
-    height: 30vh;
+    height: 35vh;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
 }
+fieldset > p {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
 label,input {
+    flex: 1;
     display: block;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+input {
+    font-size: 16px;
+    height: 2rem;
+    width: 17rem;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 2px solid transparent;
 }
 .input-pairs {
     display: flex;
+    flex: 1;
 }
+.input-label{
+    display: flex;
+    flex: 1;
+}
+input:invalid {
+    border-color: red;
+}
+input:valid{
+    border-color: green;
+}
+input:focus{
+    border-color: blue;
+    box-shadow: 5px 2px 2px blue;
+}
+
 button {
     background-color: #596D48;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 600;
     width: 250px;
     height: 50px;
     border: 0px;
     border-radius: 10px;
+    margin: 2rem;
+}
+#login-text {
+    margin-left: 2.3rem;
+    font-size: 18px;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    color: #596D48;
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: none;
 }
